@@ -254,7 +254,7 @@
 }
 /* 分别设置图片 */
 .card:nth-child(1)::before{
-    background-image: url(img/rc1.jpg);
+    background-image: url(rc1.jpg);
 }
 .card:nth-child(2)::before{
     background-image: url(rc2.jpg);
