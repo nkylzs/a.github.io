@@ -59,16 +59,16 @@
 }
 
 .slide-1{
-    background: url('./img/2.jpg');
+    background: url('2.jpg');
 }
 .slide-2{
-    background: url('./img/2.jpg');
+    background: url('2.jpg');
 }
 .slide-3{
-    background: url('./img/2.jpg');
+    background: url('2.jpg');
 }
 .slide-4{
-    background: url('./img/2.jpg');
+    background: url('2.jpg');
 }
 
 .slide{
@@ -213,7 +213,7 @@
     bottom: 20px;
     right: 10px;
     cursor: pointer;
-    background: url("./img/rocket_top.png") no-repeat ;
+    background: url("rocket_top.png") no-repeat ;
     transition: opacity 0.2s linear;
 }
 @keyframes rocket {
@@ -234,6 +234,6 @@
     }
 }
 .back-top:hover {
-    background: url("./img/rocket_frame.png") no-repeat;
+    background: url("rocket_frame.png") no-repeat;
     animation: rocket 0.5s steps(1,start)  infinite;
 }
