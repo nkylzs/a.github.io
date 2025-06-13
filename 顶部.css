@@ -102,16 +102,16 @@
 }
 
 .slide-1{
-    background: url('../img/1.jpg');
+    background: url('1.jpg');
 }
 .slide-2{
-    background: url('../img/2.jpg');
+    background: url('2.jpg');
 }
 .slide-3{
-    background: url('../img/3.jpg');
+    background: url('3.jpg');
 }
 .slide-4{
-    background: url('../img/4.jpg');
+    background: url('4.jpg');
 }
 
 .slide{
