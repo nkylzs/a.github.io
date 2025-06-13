@@ -1,0 +1,96 @@
+
+/* 版心部分 */
+.continer{
+    width: 80%;    
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.continer>.top1{
+    width: 100%;
+    height: 320px;
+  
+}
+
+
+
+#jt{
+    position: absolute;
+    left: 200px;
+}
+
+.guide{
+    width: 100%;
+    height: 85px;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 85px;
+    background: url(../img/tit-line.png) no-repeat center center;
+    color: #444445;
+}
+
+
+
+.top4>.pics{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:  0 10%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+
+}
+
+.top4>.pics>li{
+    width: 215px;
+    height: 215px;
+    list-style: none;
+    margin-bottom: 15px;
+    position: relative;
+}
+.top4>.pics>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+.top4>.pics>li:nth-of-type(1){
+    width: 441px;
+}
+
+.top4>.pics>li>span{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+/* 第5部分 */
+
+
+.circle>.world{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    color: #666;
+}
+.circle>.world:hover{
+    color: #589ee0;
+}
+
+.coord{
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgb(151, 147, 147);
+    background: url(../img/strategy_pos.png) 88px 4px no-repeat;
+
+}
+.circleBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

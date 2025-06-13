@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.lvyou{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+}
+.gallery{
+    position: relative;
+    width: 760px;
+    height: 305px;
+}
+.gallery .item{
+    position: absolute;
+    width: 175px;
+    height: 150px;
+    overflow: hidden;
+    /* 添加过渡动画 */
+    transition: transform 0.9s, width 0.9s, height 0.9s;
+}
+.gallery .item img{
+    width: 100%;
+    height: 100%;
+}
+.gallery div[data-pos="0"]{
+    width: 400px;
+    height: inherit;
+    z-index: 9;
+}
+.gallery div[data-pos="0"]{
+    transform: translate(0,0);
+}
+.gallery div[data-pos="1"]{
+    transform: translate(405px,0);
+}
+.gallery div[data-pos="2"]{
+    transform: translate(585px,0);
+}
+.gallery div[data-pos="3"]{
+    transform: translate(405px,155px);
+}
+.gallery div[data-pos="4"]{
+    transform: translate(585px,155px);
+}
+.gallery:hover :not(div[data-pos="0"], img){
+    cursor: pointer;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.nav{
+    position: relative; z-index: 999;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background-color: #67b8d5;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+}
+.nav li{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+.nav>ul>li>a:hover{
+    height: 60px;
+    background-color: rgb(0, 85, 255);
+}
+.nav a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;   
+}
+.nav-son{
+    display: none;
+    text-align: center;
+    background-color: rgb(12, 104, 215);
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+}
+.nav-son li:hover{
+    background-color: blue;
+    width: 200px;
+    border-radius: 8px;
+}
+.nav>ul>li:hover .nav-son{
+    display: block;
+}
+.kuai1{
+    width: 100%;
+    height: 480px;
+    text-align: center;
+}
+.kuai1-1{
+    width: 800px;
+    height: 350px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(45, 42, 42);
+    border-radius: 10px;
+    margin: 50px auto;
+}
+.kuai1-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 30px 0;
+    text-align: left;
+
+}
+.r1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    line-height: 35px;
+}
+.biaoqian{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.container{
+    /* 相对定位 */
+    top: 60px;
+
+    position: relative;
+    /* 背景颜色· */
+    background: #aad5f6;
+}
+
+.slide-1{
+    background: url('../img/3.jpg');
+}
+.slide-2{
+    background: url('../img/1.jpg');
+}
+.slide-3{
+    background: url('../img/2.jpg');
+}
+.slide-4{
+    background: url('../img/4.jpg');
+}
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    /* 图像铺满整个背景区域, */
+    background-size: cover;
+    background-position: center;
+    /* 相对定位 */
+    position: relative;
+    overflow-x: hidden ;
+}
+
+.caption{
+    background:rgba(0, 0, 0, 0.03) ;
+    width: 100%;
+    /* 绝对定位 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 0px;
+}
+
+.container h3{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding: 18px;
+}
+
+.container p{
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    color: #ccc;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.arrow {
+    /* 绝对定位 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: background 500ms;
+}
+
+.arrow img{
+    width: 50px;
+}
+
+.arrow:hover{
+    background:rgba(0, 0, 0, 0.4) ;
+}
+
+.l{
+    left: 0;
+}
+.r{
+    right: 0;
+}
+.kuai2{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 允许换行 */
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 240px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #f5f5f5;
+    /* 阴影 */
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+    0 2px 2px rgba(0,0,0,0.1),
+    0 4px 4px rgba(0,0,0,0.1),
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.card::before{
+    content: "";
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 0 0;
+    /* 过渡效果: css属性名 时长 贝塞尔曲线 */
+    transition: transform 1s cubic-bezier(0.19,1,0.22,1);
+}
+/* 分别设置图片 */
+.card:nth-child(1)::before{
+    background-image: url(../img/rc1.jpg);
+}
+.card:nth-child(2)::before{
+    background-image: url(../img/rc2.jpg);
+}
+.card:nth-child(3)::before{
+    background-image: url(../img/rc3.jpg);
+}
+.card:nth-child(4)::before{
+    background-image: url(../img/rc4.jpg);
+}
+/* 遮罩 */
+.card::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.25) 55%,
+    rgba(0,0,0,0.8) 100%);
+    /* 绝对定位 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    /* 过渡效果 */
+    transition: transform 1.4s cubic-bezier(0.19,1,0.22,1);
+}
+.card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 16px 8px;
+    transform: translateY(76%);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1);
+}
+.card h2{
+    font-size: 23px;
+    font-weight: bold;
+}
+.card p{
+    font-size: 15px;
+    /* 字间距 */
+    letter-spacing: 2px;
+    width: 80%;
+    line-height: 30px;
+    margin-top: 25px;
+    /* 文本两端对齐 */
+    text-align: justify;
+}
+.card button{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.card button:hover{
+    background-color: #000;
+}
+.card .content *:not(h2){
+    /* .content下，除了h2，其他元素隐藏并下移20px */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1),opacity 0.7s cubic-bezier(0.19,1,0.22,1);
+}
+.card:hover{
+    align-items: center;
+}
+.card:hover::before{
+    transform: translateY(-5%);
+}
+.card:hover::after{
+    transform: translateY(-50%);
+}
+.card:hover .content{
+    transform: translateY(0);
+}
+.card:hover .content *:not(h2){
+    opacity: 1;
+    transform: translateY(0);
+    /* 过渡效果延迟 */
+    transition-delay: 0.1s;
+}
+.kuai3{
+    position: relative;
+    position: absolute;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+.kuai3-1{
+    margin-top: 100px;
+    width: 950px;
+    height: 350px;
+    margin-left: 10px;
+    background-color: #4c6e75;
+    padding: 10px;
+    line-height: 35px;
+    text-indent: 2em;
+}
+.kuai3-2{
+    position: absolute; /* 绝对定位 */
+    top: 20px;
+    right: -80px;
+    border-style: solid;
+    border-width: 2px;
+}
+.back-top {
+    position: fixed;
+    opacity: 0;
+    z-index:999;
+    width: 150px;
+    height: 174px;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+    background: url("../img/rocket_top.png") no-repeat ;
+    transition: opacity 0.2s linear;
+}
+@keyframes rocket {
+    0% {
+        background-position:0 0;
+    }
+    25% {
+        background-position: -150px 0;
+    }
+    50% {
+        background-position: -300px 0;
+    }
+    75% {
+        background-position: -450px 0;
+    }
+    100% {
+        background-position: -600px 0;
+    }
+}
+.back-top:hover {
+    background: url("../img/rocket_frame.png") no-repeat;
+    animation: rocket 0.5s steps(1,start)  infinite;
+}
