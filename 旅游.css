@@ -150,16 +150,16 @@
 }
 
 .slide-1{
-    background: url('../img/3.jpg');
+    background: url('3.jpg');
 }
 .slide-2{
-    background: url('../img/1.jpg');
+    background: url('1.jpg');
 }
 .slide-3{
-    background: url('../img/2.jpg');
+    background: url('2.jpg');
 }
 .slide-4{
-    background: url('../img/4.jpg');
+    background: url('4.jpg');
 }
 
 .slide{
@@ -266,16 +266,16 @@
 }
 /* 分别设置图片 */
 .card:nth-child(1)::before{
-    background-image: url(../img/rc1.jpg);
+    background-image: url(rc1.jpg);
 }
 .card:nth-child(2)::before{
-    background-image: url(../img/rc2.jpg);
+    background-image: url(rc2.jpg);
 }
 .card:nth-child(3)::before{
-    background-image: url(../img/rc3.jpg);
+    background-image: url(rc3.jpg);
 }
 .card:nth-child(4)::before{
-    background-image: url(../img/rc4.jpg);
+    background-image: url(rc4.jpg);
 }
 /* 遮罩 */
 .card::after{
@@ -411,6 +411,6 @@
     }
 }
 .back-top:hover {
-    background: url("../img/rocket_frame.png") no-repeat;
+    background: url("rocket_frame.png") no-repeat;
     animation: rocket 0.5s steps(1,start)  infinite;
 }
